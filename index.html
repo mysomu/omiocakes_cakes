@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omio Cakes - Fresh Cakes • Best Prices • Fast Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo"><img src="/logo/logo.jpg"> Omio Cakes</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#special" class="nav-link">Special Products</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="home-banner">
+            <div class="image-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200" alt="Cake 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200" alt="Cake 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=1200" alt="Cake 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1606312619070-d48b4bdc6b2c?w=1200" alt="Cake 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=1200" alt="Cake 5">
+                    </div>
+                </div>
+                <div class="carousel-overlay">
+                    <h1 class="banner-title">🍰 Omio Cakes</h1>
+                    <p class="tagline">Fresh Cakes • Best Prices • Fast Delivery</p>
+                    <button class="cta-button" onclick="scrollToSection('products')">Order Now</button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Cake Collection</h2>
+            
+            <!-- Vanilla Cakes -->
+            <div class="category-section">
+                <h3 class="category-title">🍰 Vanilla Cakes – ₹500 per pound</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-category="vanilla" data-price="500">
+                        <img src="/Vanilla Cakes/MangoCake.jpg" alt="Mango Cake">
+                        <h4>Mango Cake</h4>
+                        <p class="product-desc">Fresh mango flavor</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹250</option>
+                                <option value="1">1 pound - ₹500</option>
+                                <option value="1.5">1.5 pound - ₹750</option>
+                                <option value="2">2 pounds - ₹1000</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">250</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="vanilla" data-price="500">
+                        <img src="/Vanilla Cakes/Strawberry.jpg" alt="Strawberry Cake">
+                        <h4>Strawberry Cake</h4>
+                        <p class="product-desc">Sweet strawberry delight</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹250</option>
+                                <option value="1">1 pound - ₹500</option>
+                                <option value="1.5">1.5 pound - ₹750</option>
+                                <option value="2">2 pounds - ₹1000</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">250</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="vanilla" data-price="500">
+                        <img src="/Vanilla Cakes/Orange.jpg" alt="Orange Cake">
+                        <h4>Orange Cake</h4>
+                        <p class="product-desc">Zesty orange flavor</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹250</option>
+                                <option value="1">1 pound - ₹500</option>
+                                <option value="1.5">1.5 pound - ₹750</option>
+                                <option value="2">2 pounds - ₹1000</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">250</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="vanilla" data-price="500">
+                        <img src="/Vanilla Cakes/Pineapple.jpg" alt="Pineapple Cake">
+                        <h4>Pineapple Cake</h4>
+                        <p class="product-desc">Tropical pineapple taste</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹250</option>
+                                <option value="1">1 pound - ₹500</option>
+                                <option value="1.5">1.5 pound - ₹750</option>
+                                <option value="2">2 pounds - ₹1000</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">250</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="vanilla" data-price="500">
+                        <img src="/Vanilla Cakes/Strawberry.jpg" alt="Mixed Fruit Cake">
+                        <h4>Mixed Fruit Cake</h4>
+                        <p class="product-desc">Assorted fresh fruits</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹250</option>
+                                <option value="1">1 pound - ₹500</option>
+                                <option value="1.5">1.5 pound - ₹750</option>
+                                <option value="2">2 pounds - ₹1000</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">250</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Butterscotch Cake -->
+            <div class="category-section">
+                <h3 class="category-title">🍮 Butterscotch Cake – ₹270 per 0.5pound</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-category="butterscotch" data-price="540">
+                        <img src="/Butter scotch/Butter scotch .jpg" alt="Classic Butterscotch Cake">
+                        <h4>Classic Butterscotch Cake</h4>
+                        <p class="product-desc">Rich butterscotch flavor</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹270</option>
+                                <option value="1">1 pounds - ₹540</option>
+                                <option value="1.5">1.5 pound - ₹810</option>
+                                <option value="2">2 pound - ₹1080</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">270</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rasmalai Cake -->
+            <div class="category-section">
+                <h3 class="category-title">🧁 Rasmalai Cake – ₹270 per 0.5pound</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-category="rasmalai" data-price="540">
+                        <img src="/Rasmalai Cake/rasmalai cake.jpg" alt="Rasmalai Cake">
+                        <h4>Rasmalai Cake</h4>
+                        <p class="product-desc">Traditional Indian flavor</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹270</option>
+                                <option value="1">1 pounds - ₹540</option>
+                                <option value="1.5">1.5 pound - ₹810</option>
+                                <option value="2">2 pound - ₹1080</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">270</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chocolate Cakes -->
+            <div class="category-section">
+                <h3 class="category-title">🍫 Chocolate Cakes – ₹300 per 0.5pound</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-category="chocolate" data-price="600">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Chocolate Cake">
+                        <h4>Chocolate Cake</h4>
+                        <p class="product-desc">Rich chocolate flavor</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹300</option>
+                                <option value="1">1 pound - ₹600</option>
+                                <option value="1.5">1.5 pound - ₹900</option>
+                                <option value="2">2 pounds - ₹1200</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">300</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="chocolate" data-price="600">
+                        <img src="/Chocolate Cakes/Chocolate mud.jpg" alt="Chocolate Mud Cake">
+                        <h4>Chocolate Mud Cake</h4>
+                        <p class="product-desc">Decadent mud cake</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹300</option>
+                                <option value="1">1 pound - ₹600</option>
+                                <option value="1.5">1.5 pound - ₹900</option>
+                                <option value="2">2 pounds - ₹1200</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">300</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="chocolate" data-price="600">
+                        <img src="/Chocolate Cakes/Chocolate truffles cake.jpg" alt="Chocolate Truffle Cake">
+                        <h4>Chocolate Truffle Cake</h4>
+                        <p class="product-desc">Luxurious truffle</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹300</option>
+                                <option value="1">1 pound - ₹600</option>
+                                <option value="1.5">1.5 pound - ₹900</option>
+                                <option value="2">2 pounds - ₹1200</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">300</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="chocolate" data-price="600">
+                        <img src="/Chocolate Cakes/White chocolate cake.jpg" alt="White Chocolate Cake">
+                        <h4>White Chocolate Cake</h4>
+                        <p class="product-desc">Creamy white chocolate</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹300</option>
+                                <option value="1">1 pound - ₹600</option>
+                                <option value="1.5">1.5 pound - ₹900</option>
+                                <option value="2">2 pounds - ₹1200</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">300</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="chocolate" data-price="600">
+                        <img src="/Chocolate Cakes/Milk chocolate.jpg" alt="Milk Chocolate Cake">
+                        <h4>Milk Chocolate Cake</h4>
+                        <p class="product-desc">Smooth milk chocolate</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹300</option>
+                                <option value="1">1 pound - ₹600</option>
+                                <option value="1.5">1.5 pound - ₹900</option>
+                                <option value="2">2 pounds - ₹1200</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">300</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="chocolate" data-price="360">
+                        <img src="/Chocolate Cakes/Black forest.jpg" alt="Black Forest Cake">
+                        <h4>Black Forest Cake</h4>
+                        <p class="product-desc">Classic black forest</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹300</option>
+                                <option value="1">1 pound - ₹600</option>
+                                <option value="1.5">1.5 pound - ₹900</option>
+                                <option value="2">2 pounds - ₹1200</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">1300/span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="chocolate" data-price="600">
+                        <img src="/Chocolate Cakes/White forest cake.jpg" alt="White Forest Cake">
+                        <h4>White Forest Cake</h4>
+                        <p class="product-desc">Elegant white forest</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹300</option>
+                                <option value="1">1 pound - ₹600</option>
+                                <option value="1.5">1.5 pound - ₹900</option>
+                                <option value="2">2 pounds - ₹1200</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">300</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="chocolate" data-price="600">
+                        <img src="/Chocolate Cakes/Chocho mocha cake.jpg" alt="Choco Mocha Cake">
+                        <h4>Choco Mocha Cake</h4>
+                        <p class="product-desc">Coffee & chocolate blend</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹300</option>
+                                <option value="1">1 pound - ₹600</option>
+                                <option value="1.5">1.5 pound - ₹900</option>
+                                <option value="2">2 pounds - ₹1200</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">300</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Red Velvet Cake -->
+            <div class="category-section">
+                <h3 class="category-title">❤️ Red Velvet Cake – ₹350 per 0.5pound</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-category="redvelvet" data-price="700">
+                        <img src="/Red velvet cake/red velvet cake.jpg" alt="Red Velvet Cake">
+                        <h4>Red Velvet Cake</h4>
+                        <p class="product-desc">Classic red velvet</p>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <select class="qty-select">
+                                <option value="0.5">0.5 pound - ₹350</option>
+                                <option value="1">1 pound - ₹700</option>
+                                <option value="1.5">1.5 pound - ₹1050</option>
+                                <option value="2">2 pounds - ₹1400</option>
+                            </select>
+                        </div>
+                        <div class="price-display">Price: ₹<span class="price-value">350</span></div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tea Time Cakes -->
+            <div class="category-section">
+                <h3 class="category-title">☕ Tea Time Cakes</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-category="teatime" data-price="200">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Wheat & Oats Cake">
+                        <h4>Wheat & Oats Cake</h4>
+                        <p class="product-desc">Healthy & delicious</p>
+                        <div class="price-display">Price: ₹200</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="teatime" data-price="250">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400" alt="Orange Marmalade Cake">
+                        <h4>Orange Marmalade Cake</h4>
+                        <p class="product-desc">Tangy orange flavor</p>
+                        <div class="price-display">Price: ₹250</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="teatime" data-price="300">
+                        <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400" alt="Rich Chocolate Fudge Cake">
+                        <h4>Rich Chocolate Fudge Cake</h4>
+                        <p class="product-desc">Decadent fudge</p>
+                        <div class="price-display">Price: ₹300</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="teatime" data-price="350">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400" alt="Plum Cake">
+                        <h4>Plum Cake</h4>
+                        <p class="product-desc">Festive favorite</p>
+                        <div class="price-display">Price: ₹350</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="teatime" data-price="250">
+                        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400" alt="All-Time Hit Pound Cake">
+                        <h4>All-Time Hit Pound Cake</h4>
+                        <p class="product-desc">Classic pound cake</p>
+                        <div class="price-display">Price: ₹250</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="teatime" data-price="300">
+                        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400" alt="Parsi Bombay Cake">
+                        <h4>Parsi Bombay Cake</h4>
+                        <p class="product-desc">Traditional Parsi style</p>
+                        <div class="price-display">Price: ₹300</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="teatime" data-price="280">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=400" alt="Coconut Cream Cake">
+                        <h4>Coconut Cream Cake</h4>
+                        <p class="product-desc">Tropical coconut</p>
+                        <div class="price-display">Price: ₹280</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cup Cakes | Mug Cakes | Pastry Cakes -->
+            <div class="category-section">
+                <h3 class="category-title">🧁 Cup Cakes | Mug Cakes | Pastry Cakes</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-category="cupcakes" data-price="150">
+                        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=400" alt="Vanilla Cupcake">
+                        <h4>Vanilla Cupcake</h4>
+                        <p class="product-desc">Sweet vanilla</p>
+                        <div class="price-display">Price: ₹150</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="cupcakes" data-price="180">
+                        <img src="https://images.unsplash.com/photo-1599785209796-786432b228bc?w=400" alt="Chocolate Cupcake">
+                        <h4>Chocolate Cupcake</h4>
+                        <p class="product-desc">Rich chocolate</p>
+                        <div class="price-display">Price: ₹180</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="cupcakes" data-price="200">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=400" alt="Red Velvet Cupcake">
+                        <h4>Red Velvet Cupcake</h4>
+                        <p class="product-desc">Classic red velvet</p>
+                        <div class="price-display">Price: ₹200</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="cupcakes" data-price="120">
+                        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400" alt="Mug Cake">
+                        <h4>Mug Cake</h4>
+                        <p class="product-desc">Quick & easy</p>
+                        <div class="price-display">Price: ₹120</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="cupcakes" data-price="100">
+                        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400" alt="Pastry Cake">
+                        <h4>Pastry Cake</h4>
+                        <p class="product-desc">Delicious pastry</p>
+                        <div class="price-display">Price: ₹100</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream Section -->
+            <div class="category-section">
+                <h3 class="category-title">🍦 Ice Cream – ₹80 per scoop</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Vanilla Ice Cream">
+                        <h4>Vanilla</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Mango Ice Cream">
+                        <h4>Mango</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Strawberry Ice Cream">
+                        <h4>Strawberry</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Pineapple Ice Cream">
+                        <h4>Pineapple</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Butterscotch Ice Cream">
+                        <h4>Butterscotch</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Kesar Pista Ice Cream">
+                        <h4>Kesar Pista</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Blind Love Ice Cream">
+                        <h4>Blind Love</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Yummy Chocolate Ice Cream">
+                        <h4>Yummy Chocolate</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Nutty Chocolate Ice Cream">
+                        <h4>Nutty Chocolate</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Coffee Ice Cream">
+                        <h4>Coffee</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Choco Coffee Ice Cream">
+                        <h4>Choco Coffee</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Mix Fruit Ice Cream">
+                        <h4>Mix Fruit</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                    <div class="product-card" data-category="icecream" data-price="80">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400" alt="Peppermint Ice Cream">
+                        <h4>Peppermint</h4>
+                        <div class="price-display">Price: ₹80</div>
+                        <button class="order-btn" onclick="openOrderModal(this)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Products Section -->
+    <section id="special" class="section">
+        <div class="container">
+            <h2 class="section-title">Special Products</h2>
+            <div class="special-grid">
+                <div class="special-card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Chocolate Truffle Cake">
+                    <h3>Chocolate Truffle Cake</h4>
+                    <p>Luxurious chocolate truffle</p>
+                    <div class="special-price">₹300/pound</div>
+                </div>
+                <div class="special-card">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4bdc6b2c?w=400" alt="Red Velvet Cake">
+                    <h3>Red Velvet Cake</h3>
+                    <p>Classic red velvet</p>
+                    <div class="special-price">₹350/pound</div>
+                </div>
+                <div class="special-card">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4bdc6b2c?w=400" alt="Butterscotch Cake">
+                    <h3>Butterscotch Cake</h3>
+                    <p>Rich butterscotch</p>
+                    <div class="special-price">₹270/pound</div>
+                </div>
+                <div class="special-card">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400" alt="Rasmalai Cake">
+                    <h3>Rasmalai Cake</h3>
+                    <p>Traditional Indian flavor</p>
+                    <div class="special-price">₹270/pound</div>
+                </div>
+                <div class="special-card">
+                    <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400" alt="Black Forest Cake">
+                    <h3>Black Forest Cake</h3>
+                    <p>Classic black forest</p>
+                    <div class="special-price">₹300/pound</div>
+                </div>
+                <div class="special-card">
+                    <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=400" alt="Mixed Fruit Cake">
+                    <h3>Mixed Fruit Cake</h3>
+                    <p>Assorted fresh fruits</p>
+                    <div class="special-price">₹250/pound</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>Omio Cakes is known for fresh, handcrafted cakes delivered across town. We use premium ingredients and bake with love.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p>+91 9993332501</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Cake Street, Sweet City, India</p>
+                    </div>
+                    <div class="contact-item">
+                        <button class="whatsapp-btn" onclick="openWhatsApp()">💬 Order on WhatsApp</button>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0!2d72.8777!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzMzLjYiTiA3MsKwNTInMzkuNyJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderModal()">&times;</span>
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label>Product:</label>
+                    <input type="text" id="modalProductName" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="customerName">Customer Name *</label>
+                    <input type="text" id="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number *</label>
+                    <input type="tel" id="contactNumber" required>
+                </div>
+                <div class="form-group" id="quantityGroup">
+                    <label for="quantity">Quantity *</label>
+                    <select id="quantity" required>
+                        <option value="0.5">0.5 pound</option>
+                        <option value="1">1 pound</option>
+                        <option value="1.5">1.5 pound</option>
+                        <option value="2">2 pounds</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="isBirthday"> Is this cake for a birthday?
+                    </label>
+                </div>
+                <div class="form-group" id="birthdayNameGroup" style="display: none;">
+                    <label for="birthdayName">What name should be written on the cake?</label>
+                    <input type="text" id="birthdayName">
+                </div>
+                <div class="form-group">
+                    <label for="deliveryDate">Delivery Date *</label>
+                    <input type="date" id="deliveryDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="deliveryTime">Delivery Time *</label>
+                    <input type="time" id="deliveryTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="otherComments">Other Comments</label>
+                    <textarea id="otherComments" rows="3" placeholder="Any special instructions or comments..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Total Price:</label>
+                    <div class="total-price">₹<span id="totalPrice">0</span></div>
+                </div>
+                <button type="submit" class="submit-btn">Send Order on WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
